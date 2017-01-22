@@ -11,7 +11,16 @@
     tools:context="com.shashadhardas.integratevolley.MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:id="@+id/response"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:text="Hello World!" />
+
+    <Button android:id="@+id/doRequest"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Requst volley"
+        android:layout_centerInParent="true"
+        />
 </RelativeLayout>
