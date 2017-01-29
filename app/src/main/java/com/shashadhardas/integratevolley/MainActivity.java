@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 NetworkCommunicator net=new NetworkCommunicator(MainActivity.this);
-                net.getRequestResponseUsingVolley(new NetworkResponse.Listener() {
+                net.getUser(new NetworkResponse.Listener() {
                     @Override
                     public void onResponse(Object result) {
                         ((TextView)findViewById(R.id.response)).setText("Volley response received!");
